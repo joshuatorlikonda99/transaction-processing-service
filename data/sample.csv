@@ -1,0 +1,8 @@
+transactionId,userId,amount
+txn-001,user-101,100
+txn-002,user-102,250
+txn-003,fail-user,500
+txn-004,user-104,100
+txn-001,user-101,100
+txn-005,user-105,abc
+txn-006,,75

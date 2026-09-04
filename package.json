@@ -1,0 +1,46 @@
+{
+  "name": "transaction-processing-service",
+  "version": "1.0.0",
+  "description": "Node.js transaction processing service with streaming CSV upload, concurrency control, idempotency, and a reusable state machine.",
+  "main": "dist/server.js",
+  "scripts": {
+    "build": "tsc",
+    "typecheck": "tsc --noEmit",
+    "start": "node dist/server.js",
+    "dev": "tsx watch src/server.ts",
+    "test": "jest --runInBand",
+    "test:coverage": "jest --runInBand --coverage"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "overrides": {
+    "qs": "6.16.0"
+  },
+  "keywords": [
+    "transactions",
+    "csv",
+    "concurrency",
+    "idempotency",
+    "state-machine"
+  ],
+  "license": "MIT",
+  "dependencies": {
+    "csv-parser": "^3.2.1",
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "multer": "^1.4.5-lts.1"
+  },
+  "devDependencies": {
+    "@types/express": "^4.17.21",
+    "@types/jest": "^29.5.14",
+    "@types/multer": "^1.4.12",
+    "@types/node": "^22.10.2",
+    "@types/supertest": "^6.0.2",
+    "jest": "^29.7.0",
+    "supertest": "^7.0.0",
+    "ts-jest": "^29.2.5",
+    "tsx": "^4.19.2",
+    "typescript": "^5.7.2"
+  }
+}
